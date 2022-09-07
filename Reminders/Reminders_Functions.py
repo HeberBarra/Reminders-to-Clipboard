@@ -1,6 +1,5 @@
 # TODO: Add docstrings and comments
 
-from msilib.schema import File
 import sys
 import json
 import datetime
