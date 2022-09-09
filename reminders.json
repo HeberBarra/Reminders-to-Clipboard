@@ -37,7 +37,11 @@
             },
             {
                 "dates": ["07/09", "08/09", "09/09", "10/09", "11/09", "12/09"],
-                "message": "* *Trabalho de Recuperação de História:* \n\t* Data de entrega: 12/09 \n\t* Valor: 4,0 \n\t* Assunto: 2ª Guerra Mundial \n\t* *Assuntos essenciais*: \n\n\t-->Antecedentes; \n\n\t-->Avanço do eixo; \n\n\t-->Avanço dos Aliados; \n\n\t-->Desfecho da guerra; \n\n\t-->Participação do Brasil no conflito. \n\t* Pode ser realizado em dupla \n\t* Manuscrito \n\t* Seguir as normas da A.B.N.T., com capa, folha de rosto, sumário, introdução, desenvolvimento, conclusão, referências e imagens.\n\t *Guiazinho das normas da A.B.N.T.: https://www.todamateria.com.br/normas-abnt-trabalhos/"
+                "message": "* *Trabalho de Recuperação de História:* \n\t* Data de entrega: 12/09 \n\t* Valor: 4,0 \n\t* Assunto: 2ª Guerra Mundial \n\t* *Assuntos essenciais*: \n\t\t-->Antecedentes; \n\t\t-->Avanço do eixo; \n\t\t-->Avanço dos Aliados; \n\t\t-->Desfecho da guerra; \n\t\t-->Participação do Brasil no conflito. \n\t* Pode ser realizado em dupla \n\t* Manuscrito \n\t* Seguir as normas da A.B.N.T., com capa, folha de rosto, sumário, introdução, desenvolvimento, conclusão, referências e imagens.\n\t *Guiazinho das normas da A.B.N.T.: https://www.todamateria.com.br/normas-abnt-trabalhos/"
+            },
+            {
+                "dates": ["09/09", "10/09", "11/09", "12/09"],
+                "message": "* *Recuperação de Matemática (Classroom):* \n\t* Data de entrega: 12/09 \n\t* Valor *4,0*"
             }
         ]
     },
