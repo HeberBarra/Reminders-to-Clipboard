@@ -17,7 +17,7 @@ def main():
     # Gets the weekday
     today_is = datetime.datetime.now().strftime('%A') 
 
-    # Saves the original clipboard content so I don't lose any important thing that was there
+    # Saves the original clipboard content so I don't lose any important thing that was there, well it only works with strings/texts
     original_clipboard_content = pyperclip.paste()
 
     # Creates the message string and sends it to through whatsapp web
@@ -29,12 +29,11 @@ def main():
     print(f'Preview: \n{message}')
     pyperclip.copy(message)
     Reminders_Functions.send_message()
-    Reminders_Functions.close_link_popup(message)
 
     # Restores the original clipboard content to my clipboard
     pyperclip.copy(original_clipboard_content)
 
-    # Prints out how many second it took to run all the program
+    # Prints out how many seconds it took to run all the program
     print(f'{time.perf_counter() - start = :.2f}')
 
 
