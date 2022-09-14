@@ -35,7 +35,7 @@ def read_sheet_from_xlsx_file(xlsx_file: str):
 
 def create_today_schedule_message(sheet, weekday: str) -> str:
     """
-    Reads cells from a excel spredsheet and returns a string with all today classes
+    Reads cells from a .xlsx spreadsheet and returns a string with all today classes
     """
     if WEEKDAYS_FOR_SCHEDULE[weekday] is None:
         return ''
@@ -62,7 +62,7 @@ def read_json_file(json_file: str):
 
 def get_date() -> str:
     """
-    Returns the date that will be used to filter the messages, based wheter or not the
+    Returns the date that will be used to filter the messages, based whether or not the
     user provided a date (dd/mm format) to the program
     """
     
@@ -77,7 +77,7 @@ def get_date() -> str:
 
 def get_reminders_from_json(file) -> str:
     """
-    Analysis the JSON file and saves only the messages that were meant to be sent on
+    Analyses the JSON file and saves only the messages that were meant to be sent on
     the provided date, then returns a string of the joined messages
     """
 
@@ -106,7 +106,7 @@ def get_reminders_from_json(file) -> str:
 
 async def match_pixel(x, y, *color):
     """
-    # TODO: Add docstring
+    Loops untial the pixel in the provided x, y position matches the provided color
     """
     while not pyautogui.pixelMatchesColor(x, y, color):
         await asyncio.sleep(1)
@@ -139,13 +139,3 @@ def send_message() -> None:
     time.sleep(0.5)
     pyautogui.click(638, 738)
     pyautogui.hotkey('ctrl', 'v')
-
-
-async def close_link_popup(message: str) -> None:
-    if not re.match('http*', message):
-        return None
-
-    match_color_task = asyncio.create_task(match_pixel(1331, 587, 134, 150, 160))
-    await asyncio.sleep(0.5)
-    await match_color_task
-    pyautogui.click(1331, 587)
