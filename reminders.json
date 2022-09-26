@@ -7,8 +7,8 @@
                 "message": "*--> Trabalho de Educação Física*: \n\t* Fazer o trabalho em grupos de 4 a 6 pessoas. Cada grupo deve escolher um tipo de ginástica, e apresentar para a turma, também devem realizar uma sessão da gisnática escolhida com um tempo limite de 5 minutos. Também deve ser entregue um trabalho manuscrito ou digitado que contenha a história, fundamentos, características e movimentos da ginástica escolhida, esse trabalho textual será entregue no dia da apresentação.\n\t* Data de entrega: A ser definida pelo professor.\n\t* Link da atividade: https://classroom.google.com/c/NDU3OTY2Nzg3OTM5/a/NTM4ODExNTE3MTg2/details "
             },
             {
-                "dates": ["06/09", "07/09", "08/09", "09/09", "10/09", "11/09", "12/09", "13/09", "14/09", "15/09"],
-                "message": "*-->Por favor respondam* a pesquisa do meu amigo.\n\t* Link pro formulário: https://forms.gle/mGqr1xS5eJ5ohjoJ6 \n\t* Ele vai deixar aberto pra receber respostas até dia 15."
+                "dates": ["06/09", "07/09", "08/09", "09/09", "10/09", "11/09", "12/09", "13/09", "14/09", "15/09", "16/09", "17/09", "18/09", "19/09", "20/09", "21/09", "22/09", "23/09", "24/09", "25/09", "26/09", "27/09", "28/09", "29/09", "30/09", "01/10", "02/10", "03/10", "04/10", "05/10", "06/10", ",07/10", "08/10", "9/10", "10/10", "11/10", "12/10"],
+                "message": "*-->Por favor respondam* a pesquisa do meu amigo.\n\t* Link pro formulário: https://forms.gle/mGqr1xS5eJ5ohjoJ6 \n\t* Ele vai deixar aberto pra receber respostas até dia: 12/10."
             },
             {
                 "dates": ["06/09"],
@@ -21,6 +21,10 @@
             {
                 "dates": ["26/08", "27/08", "28/08", "29/08", "30/08", "31/08", "01/09", "02/09"],
                 "message": "*--> Atividade do Review (Inglês):* \n\t* Valor: 3,0 (Se eu não me engano) \n\t* Data de entrega: 02/09 \n\t* Não copiem do coleguinha \n\t* Link da atividade: https://classroom.google.com/c/NDU3ODMyMTE2MzU1/a/NDg4OTk4MzE2Mjc0/details "
+            },
+            {
+                "dates": "26/09",
+                "message": "*--> Atividade de Português*: \n\t* Valor: 2,0 \n\t* Reescrita da história do Mágico de Oz com uma narrativa em 1ª de um dos personagens - menos da Bruxa Má do Leste - além da reescrita também deve ser entregue um desenho com ao menos um dos personagens do livro"
             }
         ]
     },
@@ -45,7 +49,11 @@
             },
             {
                 "dates": ["15/09", "16/09", "17/09", "18/09", "19/09", "20/09"],
-                "message": "* *Recuperação de Geografia:* \n\t* Copiar e responder as questões da páginas _144_ e _155_. \n\t* Valor: *6,0* \n\t*Data de entrega: 20/09."
+                "message": "* *Recuperação de Geografia:* \n\t* Copiar e responder as questões da páginas _144_ e _145_. \n\t* Valor: *6,0* \n\t*Data de entrega: 20/09."
+            },
+            {
+                "dates": ["16/09"],
+                "message": "* *Recuperação de Português*: \n\t* Valor: 6,0 \n\t*Link: https://classroom.google.com/c/NDU3ODcwMDU3ODA5/a/NDg5NzY5MDM4NTM5/details "
             }
         ]
     },
@@ -55,12 +63,24 @@
             {
                 "dates": ["02/09"],
                 "message": "Laboratório de Informática na aula de inglês do dia: 02/09"
+            },
+            {
+                "dates": ["27/09"],
+                "message": "Laboratório de Física; dia: 27/09 na 1ª aula"
+            },
+            {
+                "dates": ["27/09", "28/09"],
+                "message": "Laboratório de Física; dia: 28/09 na 3ª aula"
             }
         ]
     },
     {
         "Title": "\n\n_*Metas da Plataforma de Inglês:*_",
         "Messages": [
+            {
+                "dates": ["27/09", "28/09", "29/09", "30/09", "01/10", "02/10"],
+                "message": "* *Primeira Meta Plataforma*: \n\tUnidade 2 Lição 1 \n\t\t* 1 Expressões - Revisão dos lugares \n\n\t* 2 Vocabulário - Endereços \n\n\t* 3 Expressões - Pedindo endereços \n\n\t* 4 Tarefa Final - Dizendo a alguém onde você mora \n\tUnidade 2 Lição 2 \n\t\t* 1 Expressões - Revisão: direções \n\t\t* 2 Expressões - Repetindo as direções \n\t\t3 Tarefa Final - Dando direções \n\t* Data de entrega: *02/10* \n\t*Link da atividade: https://classroom.google.com/c/NDU3ODMyMTE2MzU1/a/NDkwMTY1ODE4Mjg3/details "
+            }
         ]
     }
 ]
