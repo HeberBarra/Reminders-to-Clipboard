@@ -25,6 +25,10 @@
             {
                 "dates": "26/09",
                 "message": "*--> Atividade de Português*: \n\t* Valor: 2,0 \n\t* Reescrita da história do Mágico de Oz com uma narrativa em 1ª de um dos personagens - menos da Bruxa Má do Leste - além da reescrita também deve ser entregue um desenho com ao menos um dos personagens do livro"
+            },
+            {
+                "dates": ["27/09", "28/09", "29/09", "30/09", "01/10", "02/10", "03/10", "04/10", "05/10", "06/10", "07/10", "08/10", "09/10", "10/10", "11/10", "12/10", "13/10", "14/10", "15/10", "16/10", "17/10", "18/10", "19/10", "20/10"],
+                "message": "*-->Artes Visuias*: \n\t* Animação \n\t* Data de entrega: 20/10"
             }
         ]
     },
