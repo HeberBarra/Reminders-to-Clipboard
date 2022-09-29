@@ -1,5 +1,3 @@
-# TODO: Add docstrings and comments
-
 import sys
 import json
 import datetime
@@ -7,14 +5,14 @@ import logging
 import webbrowser
 import time
 import asyncio
-import re
 import pyautogui
 import openpyxl
 from Reminders.Enhanced_Reminders_List import Enhanced_Reminders_List
 
 logging.basicConfig(filename='remindersLog.txt', level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
 
-WEEKDAYS_FOR_SCHEDULE = { # Equivalent weekdays to cells letters 
+WEEKDAYS_FOR_SCHEDULE = { 
+    # Equivalent weekdays to cells letters 
     'Sunday': None,
     'Monday': 'B',
     'Tuesday': 'C',
@@ -60,22 +58,23 @@ def read_json_file(json_file: str):
     return reminders_data
 
 
-def get_date() -> str:
+def get_date() -> tuple[str]:
     """
     Returns the date that will be used to filter the messages, based whether or not the
-    user provided a date (dd/mm format) to the program
+    user provided a date (dd/mm/yy format) to the program
     """
     
     if len(sys.argv) == 1:
-        program_date = datetime.datetime.now().strftime('%d/%m')
+        program_date = datetime.datetime.now().strftime('%d/%m/%y')
 
     else:
         program_date = sys.argv[1]
 
-    return program_date
+    weekday = datetime.datetime.strptime(program_date, '%d/%m/%y').strftime('%A')
+    return program_date, weekday
 
 
-def get_reminders_from_json(file) -> str:
+def get_reminders_from_json(file, program_date: str) -> str:
     """
     Analyses the JSON file and saves only the messages that were meant to be sent on
     the provided date, then returns a string of the joined messages
@@ -83,8 +82,9 @@ def get_reminders_from_json(file) -> str:
 
     messages = Enhanced_Reminders_List()
     reminders_data = read_json_file(file)
-    program_date = get_date()
-
+    program_date = '/'.join(program_date.split('/')[:2])
+    logging.debug(program_date)
+    
     for title in reminders_data:
         if not title['Messages']:
             continue
@@ -112,7 +112,7 @@ async def match_pixel(x, y, *color):
         await asyncio.sleep(1)
 
 
-async def open_whatsapp_web() -> None:
+async def open_whatsapp_web(x, y, *color) -> None:
     """
     Opens web.whatsapp.com on Google Chrome and wait til it loads
     """
@@ -124,18 +124,18 @@ async def open_whatsapp_web() -> None:
     )
     webbrowser.get('chrome').open_new('web.whatsapp.com')
 
-    match_color_task = asyncio.create_task(match_pixel(24, 399, 84, 114, 91))
+    match_color_task = asyncio.create_task(match_pixel(x, y, *color))
     await match_color_task
     
 
-def send_message() -> None: 
+def send_message(contact_x: int, contact_y: int, message_field_x: int, message_field_y: int) -> None: 
     """
     Request the opening of web.whatsapp.com and paste the clipboard content 
     on the desired group
     """
 
-    asyncio.run(open_whatsapp_web())
-    pyautogui.click(24, 399)
-    time.sleep(0.5)
-    pyautogui.click(638, 738)
+    asyncio.run(open_whatsapp_web(24, 399, 84, 114, 91))
+    pyautogui.click(contact_x, contact_y)
+    time.sleep(1)
+    pyautogui.click(message_field_x, message_field_y)
     pyautogui.hotkey('ctrl', 'v')
