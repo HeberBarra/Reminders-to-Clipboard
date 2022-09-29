@@ -28,7 +28,7 @@ def main():
 
     print(f'Preview: \n{message}')
     pyperclip.copy(message)
-    # Reminders_Functions.send_message(24, 399, 638, 738)
+    Reminders_Functions.send_message(24, 399, 638, 738)
 
     # Restores the original clipboard content to my clipboard
     pyperclip.copy(original_clipboard_content)
