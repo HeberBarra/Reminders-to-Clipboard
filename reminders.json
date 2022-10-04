@@ -29,6 +29,10 @@
             {
                 "dates": ["27/09", "28/09", "29/09", "30/09", "01/10", "02/10", "03/10", "04/10", "05/10", "06/10", "07/10", "08/10", "09/10", "10/10", "11/10", "12/10", "13/10", "14/10", "15/10", "16/10", "17/10", "18/10", "19/10", "20/10"],
                 "message": "*-->Artes Visuias*: \n\t* Animação \n\t* Data de entrega: 20/10"
+            },
+            {
+                "dates": ["04/10", "05/10", "06/10", "07/10"],
+                "message": "*-->História*: \n\t* Atividade de história; perguntas que a professora mostrou-nos em sala \n\t* Valor: 2,0 \n\t* Data de entrega: 07/10"
             }
         ]
     },
@@ -66,6 +70,10 @@
             {
                 "dates": ["30/09", "01/10", "02/10", "03/10", "04/10", "05/10", "06/10", "07/10", "08/10", "09/10", "10/10", "11/10", "12/10", "13/10", "14/10", "15/10", "16/10", "17/10", "18/10", "19/10", "20/10", "21/10"],
                 "message": "* *Avaliação de Inglês*: \n\t* Conteúdo: Present Perfect Tense \n\t* Data: 21/10 (eu acho) \n\t* Valor: 3,0 + 1,0 da folha sobre o Present Perfect Tense"
+            },
+            {
+                "dates": ["04/10", "05/10", "06/10"],
+                "message": "* *Avaliação de Ciências*: \n\t* Conteúdo: Genética \n\t* Valor: 3,0 \n\t* Data: 06/10"
             }
         ]
     },
@@ -92,6 +100,10 @@
             {
                 "dates": ["27/09", "28/09", "29/09", "30/09", "01/10", "02/10"],
                 "message": "* *Primeira Meta Plataforma*: \n\tUnidade 2 Lição 1: \n\t\t* 1 Expressões - Revisão dos lugares \n\t\t* 2 Vocabulário - Endereços \n\t\t* 3 Expressões - Pedindo endereços \n\t\t* 4 Tarefa Final - Dizendo a alguém onde você mora \n\tUnidade 2 Lição 2: \n\t\t* 1 Expressões - Revisão: direções \n\t\t* 2 Expressões - Repetindo as direções \n\t\t3 Tarefa Final - Dando direções \n\t* Data de entrega: *02/10* \n\t* Link da atividade: https://classroom.google.com/c/NDU3ODMyMTE2MzU1/a/NDkwMTY1ODE4Mjg3/details "
+            },
+            {
+                "dates": ["05/10", "06/10", "07/10", "08/10", "09/10", "10/10"],
+                "message": "* *Segunda Meta Plaforma*: \n\tUnidade 2 Lição 3: \n\t\t* 1 Vocabulário - Transporte \n\t\t* 2 Expressões - Mais direções \n\t\t* 3 Expressões - Pedindo direções para uma empresa \n\t\t* 4 Tarefa Final - Pedindo direções para uma empresa \n\tUnidade 2 Lição 4 \n\t\t* 1 Vocabulário - Geografia \n\t\t* 2 Vocanulário - Indicando a localização de uma cidade \n\t\t* 3 Expressões - Perguntando e indicando as distâncias \n\t\t* 4 Leitura - Lendo sobre localizações \n\t\t* 5 Tarefa Final - Descrevendo a localização de uma cidade \n\t* Data de entrega: 10/10 \n\t* Link da atividade: https://classroom.google.com/c/NDU3ODMyMTE2MzU1/a/NTUyMTQ4NDcyMzEx/details "
             }
         ]
     }
