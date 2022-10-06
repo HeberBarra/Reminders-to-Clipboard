@@ -103,6 +103,10 @@
             {
                 "dates": ["27/09", "28/09"],
                 "message": "Laboratório de Física; dia: 28/09 na 3ª aula"
+            },
+            {
+                "dates": ["06/10"],
+                "message": "Laboratório de Biológia; dia: 06/10 na 2ª aula"
             }
         ]
     },
