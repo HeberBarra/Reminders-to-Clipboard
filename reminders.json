@@ -33,6 +33,10 @@
             {
                 "dates": ["04/10", "05/10", "06/10", "07/10"],
                 "message": "*-->História*: \n\t* Atividade de história; perguntas que a professora mostrou-nos em sala \n\t* Valor: 2,0 \n\t* Data de entrega: 07/10"
+            },
+            {
+                "dates": "ALWAYS",
+                "message": "*--> Natação: \n\t* Entregar o bilhete que a professora deu-nos para ela numa aula o mais rápido posssível."
             }
         ]
     },
@@ -72,8 +76,8 @@
                 "message": "* *Avaliação de Inglês*: \n\t* Conteúdo: Present Perfect Tense \n\t* Data: 21/10 (eu acho) \n\t* Valor: 3,0 + 1,0 da folha sobre o Present Perfect Tense"
             },
             {
-                "dates": ["04/10", "05/10", "06/10"],
-                "message": "* *Avaliação de Ciências*: \n\t* Conteúdo: Genética \n\t* Valor: 3,0 \n\t* Data: 06/10"
+                "dates": ["04/10", "05/10", "06/10", "07/10", "08/10", "09/10", "10/10"],
+                "message": "* *Avaliação de Ciências*: \n\t* Conteúdo: Genética \n\t* Valor: 3,0 \n\t* Data: 10/10"
             },
             {
                 "dates": ["05/10", "06/10", "07/10", "08/10", "09/10", "10/10", "11/10", "12/10", "13/10", "14/10", "15/10", "16/10", "17/10"],
