@@ -2,7 +2,6 @@
 # RemindersToClipboard.py - analyses a JSON file and then copy to clipboard every message that was meant to be send today or to a specific date (day/month/year | 00/00/00)
 
 import time
-import datetime
 import pyperclip
 from Reminders import Reminders_Functions
 

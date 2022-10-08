@@ -95,7 +95,7 @@ def get_reminders_from_json(file, program_date: str) -> str:
 
         for reminder in title['Messages']:
             if program_date in reminder['dates'] or reminder['dates'] == 'ALWAYS':
-                messages.append(reminder['message'], data=program_date)
+                messages.append(reminder['message'], date=program_date)
         
         if starting_len == len(messages):
             messages.pop()

@@ -16,19 +16,19 @@ class Enhanced_Reminders_List(list):
     'December': 'dezembro'
     }
 
-    def append(self, object, /, data=None):
+    def append(self, object, /, date=None):
 
         if not isinstance(object, str):
             return super().append(object)  
         
-        if data is None:
+        if date is None:
             return super().append(object)
 
         # Date related 
         
-        day = datetime.datetime.now().strftime('%d')
-        month = datetime.datetime.now().strftime('%B')
-        month_name = self.month_en_to_pt[month]
+        day = date.split('/')[0]
+        month = date.split('/')[1]
+        month_name = self.month_en_to_pt[datetime.datetime.now().strftime('%B')]
 
         if f'dia: {day}/{month}' in object:
             object = object.replace(f'dia: {day}/{month}', 'hoje')
@@ -45,7 +45,7 @@ class Enhanced_Reminders_List(list):
         if f'{day} de {month_name}' in object.lower():
             object = object.replace(f'{day} de {month_name}', 'hoje')
 
-        if datetime.datetime.now().strftime('%d/%m') in data:
-            object = object.replace(data, 'hoje')
+        if f'{day}/{month}' in object:
+            object = object.replace(f'{day}/{month}', 'hoje')
 
         return super().append(object)

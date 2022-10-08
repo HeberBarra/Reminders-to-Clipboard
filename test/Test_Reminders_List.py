@@ -26,14 +26,14 @@ class TestRemindersList:
     
     def test_change_dd_mm_format(self):
         test_list = Enhanced_Reminders_List()
-        test_list.append(DATE_DD_MM, data=DATE_DD_MM)
+        test_list.append(DATE_DD_MM, date=DATE_DD_MM)
         assert test_list[0] == 'hoje'
 
     def test_change_day_of_month(self):
         test_list = Enhanced_Reminders_List()
-        test_list.append(DAY_OF_MONTH, data=DATE_DD_MM)
-        test_list.append(ALTERNATIVE_DAY_OF_MONTH, data=DATE_DD_MM)
-        test_list.append(ALTERNATIVE_DAY_OF_MONTH.capitalize(), data=DATE_DD_MM)
+        test_list.append(DAY_OF_MONTH, date=DATE_DD_MM)
+        test_list.append(ALTERNATIVE_DAY_OF_MONTH, date=DATE_DD_MM)
+        test_list.append(ALTERNATIVE_DAY_OF_MONTH.capitalize(), date=DATE_DD_MM)
         assert test_list[0] == 'hoje'
         assert test_list[1] == 'dia: hoje'
         assert test_list[2] == 'Dia: hoje'

@@ -7,7 +7,7 @@
                 "message": "*--> Trabalho de Educação Física*: \n\t* Fazer o trabalho em grupos de 4 a 6 pessoas. Cada grupo deve escolher um tipo de ginástica, e apresentar para a turma, também devem realizar uma sessão da gisnática escolhida com um tempo limite de 5 minutos. Também deve ser entregue um trabalho manuscrito ou digitado que contenha a história, fundamentos, características e movimentos da ginástica escolhida, esse trabalho textual será entregue no dia da apresentação.\n\t* Data de entrega: A ser definida pelo professor.\n\t* Link da atividade: https://classroom.google.com/c/NDU3OTY2Nzg3OTM5/a/NTM4ODExNTE3MTg2/details "
             },
             {
-                "dates": ["06/09", "07/09", "08/09", "09/09", "10/09", "11/09", "12/09", "13/09", "14/09", "15/09", "16/09", "17/09", "18/09", "19/09", "20/09", "21/09", "22/09", "23/09", "24/09", "25/09", "26/09", "27/09", "28/09", "29/09", "30/09", "01/10", "02/10", "03/10", "04/10", "05/10", "06/10", ",07/10", "08/10", "9/10", "10/10", "11/10", "12/10"],
+                "dates": ["06/09", "07/09", "08/09", "09/09", "10/09", "11/09", "12/09", "13/09", "14/09", "15/09", "16/09", "17/09", "18/09", "19/09", "20/09", "21/09", "22/09", "23/09", "24/09", "25/09", "26/09", "27/09", "28/09", "29/09", "30/09", "01/10", "02/10", "03/10", "04/10", "05/10", "06/10", "07/10", "08/10", "9/10", "10/10", "11/10", "12/10"],
                 "message": "*-->Por favor respondam* a pesquisa do meu amigo.\n\t* Link pro formulário: https://forms.gle/mGqr1xS5eJ5ohjoJ6 \n\t* Ele vai deixar aberto pra receber respostas até dia: 12/10."
             },
             {
@@ -31,12 +31,16 @@
                 "message": "*-->Artes Visuias*: \n\t* Animação \n\t* Data de entrega: 20/10"
             },
             {
-                "dates": ["04/10", "05/10", "06/10", "07/10"],
-                "message": "*-->História*: \n\t* Atividade de história; perguntas que a professora mostrou-nos em sala \n\t* Valor: 2,0 \n\t* Data de entrega: 07/10"
+                "dates": ["04/10", "05/10", "06/10", "07/10", "08/10", "09/10", "10/10"],
+                "message": "*-->História*: \n\t* Atividade de história; as 10 perguntas que a professora mostrou-nos em sala \n\t* Valor: 2,0 \n\t* Data de entrega: 10/10"
             },
             {
                 "dates": "ALWAYS",
-                "message": "*--> Natação: \n\t* Entregar o bilhete que a professora deu-nos para ela numa aula o mais rápido posssível."
+                "message": "*-->Natação*: \n\t* Entregar o bilhete que a professora deu-nos para ela numa aula o mais rápido posssível."
+            },
+            {
+                "dates": ["08/10", "09/10", "10/10", "11/10", "12/10", "13/10", "14/10", "15/10", "16/10", "17/10", "18/10", "19/10"],
+                "message": "*-->Trabalho de Educação Física*: \n\t* Fazer uma apresentação sobre um esporte que foi sorteado pelo seu grupo, esta precisa conter os elesmentos históricos, fundamentos técnicos, regras básicas, o que é e quem pode praticar. \n\t* As apresentações começarão na quarta dia: 19/10 \n\t* Valor: 5,0pts."
             }
         ]
     },
@@ -73,7 +77,7 @@
             },
             {
                 "dates": ["30/09", "01/10", "02/10", "03/10", "04/10", "05/10", "06/10", "07/10", "08/10", "09/10", "10/10", "11/10", "12/10", "13/10", "14/10", "15/10", "16/10", "17/10", "18/10", "19/10", "20/10", "21/10"],
-                "message": "* *Avaliação de Inglês*: \n\t* Conteúdo: Present Perfect Tense \n\t* Data: 21/10 (eu acho) \n\t* Valor: 3,0 + 1,0 da folha sobre o Present Perfect Tense"
+                "message": "* *Avaliação de Inglês*: \n\t* Conteúdo: Present Perfect Tense \n\t* Data: 21/10 \n\t* Valor: 3,0 + 1,0 da folha sobre o Present Perfect Tense"
             },
             {
                 "dates": ["04/10", "05/10", "06/10", "07/10", "08/10", "09/10", "10/10"],
