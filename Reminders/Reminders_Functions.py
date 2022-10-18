@@ -100,7 +100,7 @@ def get_reminders_from_json(file, program_date: str) -> str:
         if starting_len == len(messages):
             messages.pop()
 
-    return ('*[Por favor leiam até o final]*\n_Data do boletim de lembretes: %s_ \
+    return ('Bom dia, que a paz possa ser convosco! *[Por favor leiam até o final]*\n_Data do boletim de lembretes: %s_ \
      \nLembretes:\n%s' % (program_date, '\n'.join(messages),))
 
 
