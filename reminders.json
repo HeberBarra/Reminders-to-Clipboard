@@ -53,6 +53,10 @@
             {
                 "dates": ["17/10"],
                 "message": "*-->Homenagem a um professor: \n\tA votação terminou ontem e a eleita para ser homenageada foi a nossa professora de matématica Neuza"
+            },
+            {
+                "dates": ["20/10", "21/10", "22/10", "23/10", "24/10"],
+                "message": "*-->Reunião de professores e responsáveis:* \n\t* Somente para os 9º anos sobre o ensino médio \n\t* Dia: 24/10 \n\t* Link: meet.google.com/bjr-yohw-gaa (obs.: usem as suas contas do governo (@escola.pr.gov.br))"
             }
         ]
     },
@@ -102,6 +106,14 @@
             {
                 "dates": ["05/10", "06/10", "07/10", "08/10", "09/10", "10/10", "11/10", "12/10", "13/10", "14/10", "15/10", "16/10", "17/10"],
                 "message": "* *Avaliação de Desenho Geométrico*: \n\t* Conteúdo: Teorema de Pitágoras \n\t* Valor: 2,0 \n\t* Data: 18/10"
+            },
+            {
+                "dates": ["23/10", "24/10", "25/10", "26/10", "27/10"],
+                "message": "* *Recuperação Artes Visuais:* \n\t* Animação \n\t* Data: 27/10"
+            },
+            {
+                "dates": ["23/10", "24/10", "25/10", "26/10", "27/10", "28/10", "29/10", "30/10", "31/10", "01/11", "02/11", "03/11"],
+                "message": "* *Avaliação Artes Visuais: \n\t* Poemas \n\t* Data: 03/11"
             }
         ]
     },
