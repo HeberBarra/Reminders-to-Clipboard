@@ -133,9 +133,22 @@ def send_message(contact_x: int, contact_y: int, message_field_x: int, message_f
     Request the opening of web.whatsapp.com and paste the clipboard content 
     on the desired group
     """
+    if len(sys.argv) == 3 and sys.argv[2] == "dontsend":
+        return
 
     asyncio.run(open_whatsapp_web(24, 399, 84, 114, 91))
     pyautogui.click(contact_x, contact_y)
     time.sleep(1)
     pyautogui.click(message_field_x, message_field_y)
     pyautogui.hotkey('ctrl', 'v')
+
+
+def date_interval(start, end):
+    date = datetime.datetime.strptime(start, '%d/%m/%y')
+    end_date = datetime.datetime.strptime(end, '%d/%m/%y')
+    date_interval = []
+    while end_date >= date:
+        date_interval.append('"' + datetime.datetime.strftime(date, '%d/%m') + '"')
+        date += datetime.timedelta(days=1) 
+    
+    return '[' + ', '.join(date_interval) + ']'
