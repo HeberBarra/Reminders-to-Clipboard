@@ -39,7 +39,7 @@
                 "message": "*-->História*: \n\t* Atividade de história; as 10 perguntas que a professora mostrou-nos em sala \n\t* Valor: 2,0 \n\t* Data de entrega: 10/10"
             },
             {
-                "dates": "ALWAYS",
+                "dates": ["26/10"],
                 "message": "*-->Natação*: \n\t* Entregar o bilhete que a professora deu-nos para ela numa aula o mais rápido possível."
             },
             {
@@ -57,6 +57,14 @@
             {
                 "dates": ["20/10", "21/10", "22/10", "23/10", "24/10"],
                 "message": "*-->Reunião de professores e responsáveis:* \n\t* Somente para os 9º anos sobre o ensino médio \n\t* Dia: 24/10 \n\t* Link: meet.google.com/bjr-yohw-gaa (obs.: usem as suas contas do governo (@escola.pr.gov.br))"
+            },
+            {
+                "dates": ["26/10", "27/10", "28/10"],
+                "message": "*-->Trabalho de Geografia:* \n\t* Valor: *2,0* \n\t* Trazer cartolina \n\t* Bandeira do país \n\t* Outras informações: \n\t\t>Nome oficial; \n\t\t>Área; \n\t\t>População absoluta(total); \n\t\t>P.I.B. total; \n\t\t>P.I.B. per capta; \n\t\t>Principais cidades; \n\t\t>Idiomais oficiais; \n\t\t>Principais atividades; econômicas; \n\t\t>Participação em copas(ano);"
+            },
+            {
+                "dates": ["26/10", "27/10", "28/10", "29/10", "30/10", "31/10"],
+                "message": "*-->Hallowen:* \n\t* Data: 31/10 \n\t* Pode vir fantasiado dia: 31/10 ou com o uniforme do nosso colégio"
             }
         ]
     },
@@ -114,6 +122,14 @@
             {
                 "dates": ["23/10", "24/10", "25/10", "26/10", "27/10", "28/10", "29/10", "30/10", "31/10", "01/11", "02/11", "03/11"],
                 "message": "* *Avaliação Artes Visuais: \n\t* Poemas \n\t* Data: 03/11"
+            },
+            {
+                "dates": ["25/10", "26/10", "27/10"],
+                "message": "* *Prova Paraná+:* \n\t* Data: 27/10 \n\t* Três últimas aulas"
+            },
+            {
+                "dates": ["26/10", "27/10", "28/10", "29/10", "30/10", "31/10", "01/11"],
+                "message": "* *Avaliação de Geografia:* \n\tData: 01/11 \n\t* Valor: *6,0*\n\t* Conteúdos: \n\t-->Ásia: \n\t\t>Aspectos naturais \n\t\t>Regionalização \n\t\t>População \n\t\t>Diversidade cultural"
             }
         ]
     },
@@ -135,6 +151,10 @@
             {
                 "dates": ["06/10"],
                 "message": "Laboratório de Biológia; dia: 06/10 na 2ª aula"
+            },
+            {
+                "dates": ["25/10", "26/10", "27/10"],
+                "message": "--> Laboratório de Biologia; dia: 27/10 na 2ª aula"
             }
         ]
     },
@@ -148,6 +168,10 @@
             {
                 "dates": ["05/10", "06/10", "07/10", "08/10", "09/10", "10/10"],
                 "message": "* *Segunda Meta Plaforma*: \n\tUnidade 2 Lição 3: \n\t\t* 1 Vocabulário - Transporte \n\t\t* 2 Expressões - Mais direções \n\t\t* 3 Expressões - Pedindo direções para uma empresa \n\t\t* 4 Tarefa Final - Pedindo direções para uma empresa \n\tUnidade 2 Lição 4 \n\t\t* 1 Vocabulário - Geografia \n\t\t* 2 Vocanulário - Indicando a localização de uma cidade \n\t\t* 3 Expressões - Perguntando e indicando as distâncias \n\t\t* 4 Leitura - Lendo sobre localizações \n\t\t* 5 Tarefa Final - Descrevendo a localização de uma cidade \n\t* Data de entrega: 10/10 \n\t* Link da atividade: https://classroom.google.com/c/NDU3ODMyMTE2MzU1/a/NTUyMTQ4NDcyMzEx/details "
+            },
+            {
+                "dates": ["25/10", "26/10", "27/10", "28/10", "29/10", "30/10", "31/10"],
+                "message": "* *Terceira Meta Plataforma:* \n\tUnidade 3 Lição 1 \n\t\t* 1 Vocabulário - Hotéis: Localização, características e preço \n\t\t* 2 Expressões - Pedindo uma recomendação de hotel \n\t\t* 3 Leitura - Lendo revisões de hotéis \n\t\t* 4 Tarefa Final - Recomendando um hotel \n\tUnidade 3 Lição 2 \n\t\t* 1 Expressões - Reservando um quarto \n\t\t* 2 Gramática - _\"Would like\"_ com substantivos e infinitivos \n\t\t* 3 Expressões - Entendendo os atendentes de hotel \n\t\t* 4 Tarefa Final - Fazendo uma reserva de hotel \n\tUnidade 3 Lição 3 \n\t\t* 1 Vocabulário - Vocabulário de hotel \n\t\t* 2 Expressões - Confirmando e corrigindo \n\t\t* 3 Expressões - Encerrando uma conversa \n\t\t* 4 Tarefa Final - Fazendo _check in_ no hotel \n\tUnidade 3 Lição 4 \n\t\t* 1 Expressões - Fazendo _checkout_ no hotel \n\t\t* 2 Expressões - Pedindo e dando feedback \n\t\t* 3 Tarefa Final - Fazendo _checkout_ no hotel"
             }
         ]
     }
