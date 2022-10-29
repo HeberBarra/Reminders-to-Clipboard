@@ -148,7 +148,15 @@ def date_interval(start, end):
     end_date = datetime.datetime.strptime(end, '%d/%m/%y')
     date_interval = []
     while end_date >= date:
-        date_interval.append('"' + datetime.datetime.strftime(date, '%d/%m') + '"')
+        date_interval.append(datetime.datetime.strftime(date, '%d/%m'))
         date += datetime.timedelta(days=1) 
     
-    return '[' + ', '.join(date_interval) + ']'
+    return date_interval
+
+
+def remove_title_special_parts(string: str) -> str:
+    special_parts = ['\n', '*', '_', ':']
+    for part in special_parts:
+        string = string.replace(part, '')
+    
+    return string
