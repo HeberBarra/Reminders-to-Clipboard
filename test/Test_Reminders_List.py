@@ -1,5 +1,5 @@
 import datetime
-from Reminders.Enhanced_Reminders_List import Enhanced_Reminders_List
+from Reminders.remindersList import Reminders_List
 
 
 MONTH_EN_TO_PT = {
@@ -25,12 +25,12 @@ ALTERNATIVE_DAY_OF_MONTH = f'dia: {DAY} de {MONTH}'
 class TestRemindersList:
     
     def test_change_dd_mm_format(self):
-        test_list = Enhanced_Reminders_List()
+        test_list = Reminders_List()
         test_list.append(DATE_DD_MM, date=DATE_DD_MM)
         assert test_list[0] == 'hoje'
 
     def test_change_day_of_month(self):
-        test_list = Enhanced_Reminders_List()
+        test_list = Reminders_List()
         test_list.append(DAY_OF_MONTH, date=DATE_DD_MM)
         test_list.append(ALTERNATIVE_DAY_OF_MONTH, date=DATE_DD_MM)
         test_list.append(ALTERNATIVE_DAY_OF_MONTH.capitalize(), date=DATE_DD_MM)
