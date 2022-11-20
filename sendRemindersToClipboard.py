@@ -2,15 +2,15 @@ from Reminders import genericReminderFunctions
 from Reminders import sendReminder
 import pyperclip
 
-
-config_data = genericReminderFunctions.readJsonFile('config.json')
-JSON_FILE = config_data['remindersJsonFilePath']
-XLSX_FILE = config_data['scheduleXlsxFilePath']
-CONTACT_COORDINATES = config_data['contactCoordinates']
-MESSAGE_FIELD_COORDINATES = config_data['messageFieldCoordinates']
-COLOR = config_data['color']
-BROWSER_NAME = config_data['browserName']
-BROWSER_PATH = config_data['browserPath']
+CONFIG_FILE = 'config.json'
+CONFIG_DATA = genericReminderFunctions.readJsonFile(CONFIG_FILE)
+JSON_FILE = CONFIG_DATA['remindersJsonFilePath']
+XLSX_FILE = CONFIG_DATA['scheduleXlsxFilePath']
+CONTACT_COORDINATES = CONFIG_DATA['contactCoordinates']
+MESSAGE_FIELD_COORDINATES = CONFIG_DATA['messageFieldCoordinates']
+COLOR = CONFIG_DATA['color']
+BROWSER_NAME = CONFIG_DATA['browserName']
+BROWSER_PATH = CONFIG_DATA['browserPath']
 
 
 def main():
