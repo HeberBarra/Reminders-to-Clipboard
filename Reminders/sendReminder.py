@@ -33,10 +33,10 @@ def  getScheduleFromFile(xlsx_file: str, weekday: str)->str:
     return '\n'.join(schedule_message)
 
 
-def getRemindersFromJson( file_path: str, program_date: str) -> str:
+def getRemindersFromJson( file_path: str, program_date: str, message: str = None) -> str:
     reminders_json_data = genericReminderFunctions.readJsonFile((file_path))
-
     messages = remindersList.Reminders_List()
+    
     # Converts date from dd/mm/yy to dd/mm format
     program_date = '/'.join(program_date.split('/')[:2])
 
@@ -48,13 +48,20 @@ def getRemindersFromJson( file_path: str, program_date: str) -> str:
         starting_len = len(messages)
 
         for reminder in title['Messages']:
+            if not reminder:
+                continue
+
             if program_date in reminder['dates'] or reminder['dates'] == 'ALWAYS':
                 messages.append(reminder['message'], date=program_date)
             
         if starting_len == len(messages):
             messages.pop()
 
-    return 'Bom dia, que a paz possa ser convosco! *[Por favor leiam até o final]*\n_Data do boltetim de lembretes: %s_\nLembretes:\n%s' % (program_date, '\n'.join(messages))
+    if message is None:
+        message = 'Bom dia, que a paz possa ser convosco! *[Por favor leiam até o final]*\n_Data do boletim de lembretes: %s_\nLembretes:\n%s' % (program_date, '\n'.join(messages))
+
+    # Example: "Good morning beautiful people! Here are the reminders for today: {messages}"
+    return message
 
 
 def  openWhatsappWeb(x: int, y: int, browser: str, browser_name:str, color: tuple[int]) -> None:
