@@ -26,7 +26,7 @@ def printReminder(reminder, last=False):
         reminder['dates'],
         reminder['message'],
         ',' if not last else ''
-    )
+    ), end=''
     )
 
 
