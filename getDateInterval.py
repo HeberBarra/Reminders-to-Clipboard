@@ -1,8 +1,8 @@
 from Reminders import createReminder
 
 def main():
-    first_date = input('Digite a primeira data: '.strip())
-    second_date = input('Digite a segunda data: '.strip())
+    first_date = input('Type in the first date: '.strip())
+    second_date = input('Type in the second date: '.strip())
     dates = createReminder.getDateInterval(first_date, second_date)
     print('[', end='')
     for date in dates:
