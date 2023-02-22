@@ -30,6 +30,7 @@ class Reminders_List(list):
         month = date.split('/')[1]
         month_name = self.month_en_to_pt[datetime.datetime.now().strftime('%B')]
 
+        # This section of the class is meant for portuguesse only
         if f'dia: {day}/{month}' in object:
             object = object.replace(f'dia: {day}/{month}', 'hoje')
 

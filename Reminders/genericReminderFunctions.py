@@ -18,11 +18,11 @@ def chooseSection(json_data: list) -> int:
         print(f'[{index}]{showReminder.removeTitleSpecialParts(json_data[index]["Title"])}')
     
     while True:
-        chosen_section = int(isOptionRight('Escolha uma seção: ', 'A seção escolhida é a desejada?: '))
+        chosen_section = int(isOptionRight('Choose a section: ', 'Is the selection right?: '))
         if chosen_section in [number for number in range(len(json_data))]:
             return chosen_section
         
-        print('Digite uma seção válida!')
+        print('Type a valid section!')
 
 
 def getDate() -> tuple[str]:
