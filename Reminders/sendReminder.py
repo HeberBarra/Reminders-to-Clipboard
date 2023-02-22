@@ -7,33 +7,29 @@ import sys
 import time
 
 
-WEEKDAYS_COLUMNS = {
-    'Sunday': None,
-    'Monday': 'B',
-    'Tuesday': 'C',
-    'Wednesday': 'D',
-    'Thursday': 'E',
-    'Friday': 'F',
-    'Saturday': None
-}
+config_data = genericReminderFunctions.readJsonFile('config.json')
+schedule_message = config_data['scheduleMessage']
+WEEKDAYS_COLUMNS = config_data['weekdayColumns']
+HEADER_MESSAGE = config_data['headerMessage']
+REMINDERS_MESSAGE = config_data['remindersMessage']
 
 
 def  getScheduleFromFile(xlsx_file: str, weekday: str)->str:
+    global schedule_message
+
     sheet = openpyxl.load_workbook(xlsx_file).active
 
     if WEEKDAYS_COLUMNS[weekday] is None:
         return ""
 
-    schedule_message = ['_*Aulas de Hoje:*_']
-
     for row in range(2, sheet.max_row + 1):
-        schedule_message.append(f'\t* {row - 1}ªAula: ' +  
+        schedule_message.append(f'\t* {row - 1} - : ' +  
         sheet[f'{WEEKDAYS_COLUMNS[weekday]}{row}'].value)
 
     return '\n'.join(schedule_message)
 
 
-def getRemindersFromJson( file_path: str, program_date: str, message: str = None) -> str:
+def getRemindersFromJson( file_path: str, program_date: str) -> str:
     reminders_json_data = genericReminderFunctions.readJsonFile((file_path))
     messages = remindersList.Reminders_List()
     
@@ -57,8 +53,7 @@ def getRemindersFromJson( file_path: str, program_date: str, message: str = None
         if starting_len == len(messages):
             messages.pop()
 
-    if message is None:
-        message = 'Bom dia, que a paz possa ser convosco! *[Por favor leiam até o final]*\n_Data do boletim de lembretes: %s_\nLembretes:\n%s' % (program_date, '\n'.join(messages))
+    message = f'{HEADER_MESSAGE} {program_date} {REMINDERS_MESSAGE} \n'
 
     # Example: "Good morning beautiful people! Here are the reminders for today: {messages}"
     return message
