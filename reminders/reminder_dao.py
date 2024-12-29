@@ -1,4 +1,5 @@
 from reminders.reminder import Reminder
+from reminders.reminders_list import RemindersList
 import dataclasses
 
 
@@ -17,8 +18,24 @@ class ReminderDAO:
             }
         )
 
-    def list_all_reminders(self) -> list[Reminder]:
-        pass
+    def list_reminders_formatted(self, header: str, current_date: str) -> str:
+        reminders_list = RemindersList()
+
+        for section in self.json_data:
+            if not section['Messages']:
+                continue
+
+            reminders_list.append(f'[{section['Title']}]')
+            starting_len = len(reminders_list)
+
+            for reminder in section['Messages']:
+                if (current_date == 'ALWAYS') or (current_date in reminder['dates']):
+                    reminders_list.append(reminder['message'], current_date)
+
+            if starting_len == len(reminders_list):
+                reminders_list.pop()
+
+        return f'{header} {current_date}\n{'\n'.join(reminders_list)}'
 
     def list_valid_reminders_json(self, current_date: str) -> list:
         valid_reminders = []
