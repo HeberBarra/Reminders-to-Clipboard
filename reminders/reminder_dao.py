@@ -14,7 +14,7 @@ class ReminderDAO:
         self.json_data[reminder.section_index]['Messages'].append(
             {
                 'dates': reminder.calculate_date_interval(),
-                'message': reminder.adjust_message()
+                'message': reminder.adjust_message(),
             }
         )
 
@@ -44,7 +44,9 @@ class ReminderDAO:
         for section in self.json_data:
             valid_reminders.append({'Title': section['Title'], 'Messages': []})
             for reminder in section['Messages']:
-                if (reminder['dates'] == 'ALWAYS') or (current_date in reminder['dates']):
+                if (reminder['dates'] == 'ALWAYS') or (
+                    current_date in reminder['dates']
+                ):
                     valid_reminders[section_index]['Messages'].append(reminder)
 
             section_index += 1

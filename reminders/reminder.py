@@ -10,7 +10,14 @@ class Reminder:
     section_index: int
     message: str
 
-    def __init__(self, initial_date: date, last_date: date, section: str, section_index: int, message: str):
+    def __init__(
+        self,
+        initial_date: date,
+        last_date: date,
+        section: str,
+        section_index: int,
+        message: str,
+    ):
         self.initial_date = initial_date
         self.last_date = last_date
         self.section = section
@@ -34,9 +41,11 @@ class Reminder:
         return self.message.replace('\\n', '\n').replace('\\t', '\t')
 
     def print(self, is_last=False):
-        print(f"""
+        print(
+            f"""
         \t\t{{
         \t\t\t"dates": {self.calculate_date_interval()}
         \t\t\t"message": "{self.message}"
         \t\t}}{'' if is_last else ','}
-        """.replace('\'', '"'))
+        """.replace("'", '"')
+        )
