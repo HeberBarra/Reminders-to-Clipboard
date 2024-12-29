@@ -1,5 +1,5 @@
-from Reminders import genericReminderFunctions
-from Reminders import deleteReminder
+from reminders import genericReminderFunctions
+from reminders import deleteReminder
 import json
 
 # Gets a dd/mm/yy date and converts to a dd/mm format

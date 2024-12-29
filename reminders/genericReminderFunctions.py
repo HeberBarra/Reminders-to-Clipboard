@@ -1,4 +1,4 @@
-from Reminders import showReminder
+from reminders import showReminder
 import datetime
 import sys
 import json

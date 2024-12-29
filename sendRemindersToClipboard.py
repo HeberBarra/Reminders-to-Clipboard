@@ -1,5 +1,5 @@
-from Reminders import genericReminderFunctions
-from Reminders import sendReminder
+from reminders import genericReminderFunctions
+from reminders import sendReminder
 import pyperclip
 
 CONFIG_FILE = 'config.json'

@@ -1,5 +1,5 @@
-from Reminders import genericReminderFunctions
-from Reminders import showReminder
+from reminders import genericReminderFunctions
+from reminders import showReminder
 
 CONFIG_FILE = 'config.json'
 CONFIG_DATA = genericReminderFunctions.readJsonFile(CONFIG_FILE)

@@ -1,4 +1,4 @@
-from Reminders import createReminder
+from reminders import createReminder
 
 def main():
     first_date = input('Type in the first date: '.strip())

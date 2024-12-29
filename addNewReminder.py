@@ -1,6 +1,6 @@
-from Reminders import genericReminderFunctions
-from Reminders import showReminder
-from Reminders import createReminder
+from reminders import genericReminderFunctions
+from reminders import showReminder
+from reminders import createReminder
 import json
 
 config_data = genericReminderFunctions.readJsonFile('config.json')

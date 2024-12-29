@@ -1,5 +1,5 @@
-from Reminders import genericReminderFunctions
-from Reminders import remindersList
+from reminders import genericReminderFunctions
+from reminders import remindersList
 import openpyxl
 import webbrowser
 import pyautogui
