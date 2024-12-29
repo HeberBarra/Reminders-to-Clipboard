@@ -4,7 +4,7 @@ from reminders.reminder_dao import ReminderDAO
 from schedule import schedule
 import pyperclip
 
-CONFIG_FILE = 'config.json'
+CONFIG_FILE = 'config/config.json'
 CONFIG_DATA = json_utils.read_json_file(CONFIG_FILE)
 HEADER = CONFIG_DATA['headerMessage']
 JSON_FILE = CONFIG_DATA['remindersJsonFilePath']

@@ -6,7 +6,7 @@ from utils import json_utils
 import datetime
 import json
 
-CONFIG_DATA = json_utils.read_json_file('config.json')
+CONFIG_DATA = json_utils.read_json_file('config/config.json')
 JSON_FILE = CONFIG_DATA['remindersJsonFilePath']
 json_data = json_utils.read_json_file(JSON_FILE)
 

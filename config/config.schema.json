@@ -1,0 +1,60 @@
+{
+  "$id": "",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "JSON Schema for the configuration of reminders-to-clipboard",
+  "type": ["object"],
+  "properties": {
+    "scheduleMessage": {
+      "description": "The message that appears before the schedule is shown.",
+      "type": ["array"],
+      "items": {
+        "type": "string"
+      }
+    },
+    "headerMessage": {
+      "description": "The message that appears on the top of text.",
+      "type": "string"
+    },
+    "remindersMessage": {
+      "description": "The message that appears before the reminders.",
+      "type": "string"
+    },
+    "remindersJsonFilePath": {
+      "description": "Where the reminders should be saved.",
+      "type": "string"
+    },
+    "scheduleXlsxFilePath": {
+      "description": "The XLSX file where the schedule is stored",
+      "type": "string"
+    },
+    "weekdayColumns": {
+      "description": "The column equivalent to each day of the week.",
+      "type": "object",
+      "properties": {
+        "Sunday": {
+          "type": ["string", "null"]
+        },
+        "Monday": {
+          "type": ["string", "null"]
+        },
+        "Tuesday": {
+          "type": ["string", "null"]
+        },
+        "Wednesday": {
+          "type": ["string", "null"]
+        },
+        "Thursday": {
+          "type": ["string", "null"]
+        },
+        "Friday": {
+          "type": ["string", "null"]
+        },
+        "Saturday": {
+          "type": ["string", "null"]
+        }
+      },
+      "required": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    }
+  },
+  "required": ["scheduleMessage", "headerMessage", "remindersJsonFilePath", "remindersMessage", "scheduleXlsxFilePath", "weekdayColumns"]
+}

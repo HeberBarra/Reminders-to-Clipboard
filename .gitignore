@@ -3,7 +3,7 @@
 venv
 remindersLog.txt
 .vscode/settings.json
-config.json
+config/config.json
 reminders.json
 Horário.xlsx
 schedule.xlsx
