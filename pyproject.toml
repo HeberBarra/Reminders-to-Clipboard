@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "reminders-to-clipboard"
+version = "1.0.0"
+description = "Python programa created to help me remind my class of the important stuff"
+authors = ["Heber F Barra <heberferreirabarra@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+openpyxl = "^3.1.5"
+pyautogui = "^0.9.54"
+pyperclip = "^1.9.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
