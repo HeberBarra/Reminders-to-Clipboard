@@ -1,4 +1,4 @@
-def getUndeletedRemindersData(data, date, section_index = 0, undeleted_data = None):
+def getUndeletedRemindersData(data, date, section_index=0, undeleted_data=None):
     if undeleted_data is None:
         undeleted_data = []
 
@@ -11,4 +11,4 @@ def getUndeletedRemindersData(data, date, section_index = 0, undeleted_data = No
 
         section_index += 1
 
-    return undeleted_data 
+    return undeleted_data

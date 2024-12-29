@@ -1,4 +1,4 @@
-from reminders import reminder
+from reminders import reminder_json
 
 
 def is_option_right(
@@ -15,7 +15,7 @@ def is_option_right(
 def choose_section(json_data: list) -> int:
     valid_numbers = []
     for index in range(len(json_data)):
-        print(f'[{index}]{reminder.format_title(json_data[index]['Title'])}')
+        print(f'[{index}]{reminder_json.format_title(json_data[index]['Title'])}')
         valid_numbers.append(index)
 
     while True:

@@ -1,7 +1,7 @@
 import datetime
 
 
-def getDateInterval(start: str, end:str) -> list[str]:
+def getDateInterval(start: str, end: str) -> list[str]:
     date = datetime.datetime.strptime(start, '%d/%m/%y')
     end_date = datetime.datetime.strptime(end, '%d/%m/%y')
     date_interval = []
