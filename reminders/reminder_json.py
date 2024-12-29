@@ -18,12 +18,11 @@ def print_reminder(reminder, last=False):
         return
 
     print(
-        f"""
-    \t\t{{
-    \t\t\t"dates": {reminder['dates']},
-    \t\t\t"message": "{reminder['message']}" 
-    \t\t}}{',' if not last else ''}
-    """,
+        f"""    {{
+      "dates": {reminder['dates']},
+      "message": "{reminder['message']}" 
+    }}{',' if not last else ''}
+        """,
         end='',
     )
 
@@ -36,9 +35,9 @@ def print_reminders(section: dict) -> None:
 
 def print_section(section: dict, is_last=False) -> None:
     print('{')
-    print(f'\t"Title": "{format_title(section['Title'])}"')
-    print('\t"Messages": [')
+    print(f'  "Title": "{format_title(section['Title'])}",')
+    print('  "Messages": [')
     print_reminders(section)
-    print('\t]')
+    print('\r  ]')
     print('}', end='')
     print('' if is_last else ',')
