@@ -13,6 +13,12 @@ pyautogui = "^0.9.54"
 pyperclip = "^1.9.0"
 
 
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.8.4"
+
+[tool.ruff.format]
+quote-style = "single"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
