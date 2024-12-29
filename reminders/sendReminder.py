@@ -32,7 +32,7 @@ def getScheduleFromFile(xlsx_file: str, weekday: str) -> str:
 
 def getRemindersFromJson(file_path: str, program_date: str) -> str:
     reminders_json_data = json_utils.read_json_file(file_path)
-    messages = remindersList.RemindersList()
+    messages = reminders_list.RemindersList()
 
     # Converts date from dd/mm/yy to dd/mm format
     program_date = '/'.join(program_date.split('/')[:2])
