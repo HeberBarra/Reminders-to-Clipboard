@@ -41,4 +41,4 @@ def print_section(section: dict, is_last=False) -> None:
     print_reminders(section)
     print('\t]')
     print('}', end='')
-    print('' if is_last else '.')
+    print('' if is_last else ',')
