@@ -11,10 +11,18 @@ class ReminderDAO:
         self.json_data = json_data
 
     def create(self, reminder: Reminder) -> None:
+        reminders = self.json_data['reminders'][reminder.section_index]['Messages']
+
+        if len(reminders) == 0:
+            last_id = 0
+        else:
+            last_id = reminders[-1]['localID']
+
         self.json_data['reminders'][reminder.section_index]['Messages'].append(
             {
+                'localID': last_id + 1,
                 'dates': reminder.calculate_date_interval(),
-                'message': reminder.adjust_message(),
+                'message': reminder.adjust_message()
             }
         )
 
