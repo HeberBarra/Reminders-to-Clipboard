@@ -1,5 +1,5 @@
 from section.section import Section
-from data.reminders_data import RemindersData
+from reminders.reminders_data import RemindersData
 
 
 class SectionDAO:
@@ -42,6 +42,15 @@ class SectionDAO:
             if sections_json[i]['Title'] == section.title:
                 updated_section = {'Title': section.title, 'Messages': section.messages}
                 sections_json[i] = updated_section
+                break
+
+        self._reminders_data.save()
+
+    def update_title(self, section: Section, old_title: str):
+        sections_json = self._get_sections_json()
+        for i in range(len(sections_json)):
+            if sections_json[i]['Title'] == old_title:
+                sections_json[i] = section.get_dict()
                 break
 
         self._reminders_data.save()
