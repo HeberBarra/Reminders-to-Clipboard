@@ -1,0 +1,45 @@
+{
+  "$id": "",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "JSON Schema for the reminders' data file.",
+  "type": "object",
+  "properties": {
+    "reminders": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Title": {
+            "type": "string",
+            "description": "The title of a section."
+          },
+          "Messages": {
+            "type": "array",
+            "description": "All the messages of a section.",
+            "items": {
+              "type": "object",
+              "properties": {
+                "localID": {
+                  "type": "number",
+                  "description": "The ID of the reminder inside the section for facilitating modifications."
+                },
+                "dates": {
+                  "type": "array",
+                  "description": "The date interval in which a reminder should be shown.",
+                  "items": {
+                    "type": "string",
+                    "pattern": "[0-3][0-9]/[0-1][0-9]"
+                  }
+                },
+                "message": {
+                  "type": "string",
+                  "description": "The message of a reminder."
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

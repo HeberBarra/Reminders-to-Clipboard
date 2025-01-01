@@ -1,5 +1,5 @@
-def show_section(index: int, json_data: list) -> None:
-    for item in json_data[index]['Messages']:
+def show_section(index: int, json_data: dict) -> None:
+    for item in json_data['reminders'][index]['Messages']:
         print(item['dates'])
         print(f'{item['message']}\n')
 

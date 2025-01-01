@@ -5,13 +5,13 @@ import dataclasses
 
 @dataclasses.dataclass()
 class ReminderDAO:
-    json_data: list
+    json_data: dict
 
-    def __init__(self, json_data: list):
+    def __init__(self, json_data: dict):
         self.json_data = json_data
 
     def create(self, reminder: Reminder) -> None:
-        self.json_data[reminder.section_index]['Messages'].append(
+        self.json_data['reminders'][reminder.section_index]['Messages'].append(
             {
                 'dates': reminder.calculate_date_interval(),
                 'message': reminder.adjust_message(),
@@ -21,7 +21,7 @@ class ReminderDAO:
     def list_reminders_formatted(self, header: str, current_date: str) -> str:
         reminders_list = RemindersList()
 
-        for section in self.json_data:
+        for section in self.json_data['reminders']:
             if not section['Messages']:
                 continue
 
@@ -41,7 +41,7 @@ class ReminderDAO:
         valid_reminders = []
         section_index = 0
 
-        for section in self.json_data:
+        for section in self.json_data['reminders']:
             valid_reminders.append({'Title': section['Title'], 'Messages': []})
             for reminder in section['Messages']:
                 if (reminder['dates'] == 'ALWAYS') or (

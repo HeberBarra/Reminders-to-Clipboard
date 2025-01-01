@@ -20,13 +20,13 @@ def main():
 
     initial_date = datetime.datetime.strptime(start_date, '%d/%m/%y')
     last_date = datetime.datetime.strptime(end_date, '%d/%m/%y')
-    section = json_data[section_index]['Title']
+    section = json_data['reminders'][section_index]['Title']
     reminder = Reminder(initial_date, last_date, section, section_index, message)
     reminder_dao = ReminderDAO(json_data)
     reminder_dao.create(reminder)
 
     with open(JSON_FILE, 'w', encoding='utf-8') as file:
-        file.write(json.dumps(reminder_dao.json_data, ensure_ascii=False))
+        file.write(json.dumps(reminder_dao.json_data, ensure_ascii=False, indent=2))
 
 
 if __name__ == '__main__':

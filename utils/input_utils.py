@@ -12,10 +12,10 @@ def is_option_right(
             return user_input
 
 
-def choose_section(json_data: list) -> int:
+def choose_section(json_data: dict) -> int:
     valid_numbers = []
-    for index in range(len(json_data)):
-        print(f'[{index}]{reminder_json.format_title(json_data[index]['Title'])}')
+    for index in range(len(json_data['reminders'])):
+        print(f'[{index}]{reminder_json.format_title(json_data['reminders'][index]['Title'])}')
         valid_numbers.append(index)
 
     while True:

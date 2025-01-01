@@ -8,8 +8,8 @@ json_data = json_utils.read_json_file(JSON_FILE)
 
 
 def main():
-    for section in json_data:
-        reminder_json.print_section(section, section == json_data[-1])
+    for section in json_data['reminders']:
+        reminder_json.print_section(section, section == json_data['reminders'][-1])
 
 
 if __name__ == '__main__':
