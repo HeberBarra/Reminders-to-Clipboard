@@ -1,3 +1,7 @@
+from os import stat
+import os.path
+
+
 def show_section(index: int, json_data: dict) -> None:
     for item in json_data['reminders'][index]['Messages']:
         print(item['dates'])
@@ -41,3 +45,15 @@ def print_section(section: dict, is_last=False) -> None:
     print('\r  ]')
     print('}', end='')
     print('' if is_last else ',')
+
+
+def create_reminders_file():
+    reminders_file = 'reminders.json'
+    base_data = {"$schema": "reminders/reminders.schema.json","reminders": []}
+
+    if os.path.isfile(reminders_file) and stat(reminders_file).st_size != 0:
+        return
+
+    with open(reminders_file, 'w',encoding='utf-8') as file:
+        file.write(base_data.__str__().replace('\'', '"'))
+
