@@ -4,9 +4,9 @@ import dataclasses
 @dataclasses.dataclass
 class Section:
     title: str
-    messages: list[str]
+    messages: list
 
-    def __init__(self, title: str, messages: list[str] = None):
+    def __init__(self, title: str, messages: list = None):
         if messages is None:
             messages = []
 
