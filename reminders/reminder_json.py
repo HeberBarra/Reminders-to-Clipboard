@@ -1,5 +1,4 @@
-from os import stat
-import os.path
+from os import stat, path
 
 
 def show_section(index: int, json_data: dict) -> None:
@@ -47,13 +46,11 @@ def print_section(section: dict, is_last=False) -> None:
     print('' if is_last else ',')
 
 
-def create_reminders_file():
-    reminders_file = 'reminders.json'
-    base_data = {"$schema": "reminders/reminders.schema.json","reminders": []}
+def create_reminders_file(reminders_file: str):
+    base_data = {'$schema': 'reminders/reminders.schema.json', 'reminders': []}
 
-    if os.path.isfile(reminders_file) and stat(reminders_file).st_size != 0:
+    if path.isfile(reminders_file) and stat(reminders_file).st_size != 0:
         return
 
-    with open(reminders_file, 'w',encoding='utf-8') as file:
-        file.write(base_data.__str__().replace('\'', '"'))
-
+    with open(reminders_file, 'w', encoding='utf-8') as file:
+        file.write(base_data.__str__().replace("'", '"'))
