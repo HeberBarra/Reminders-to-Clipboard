@@ -9,7 +9,7 @@ import dataclasses
 class Configurator:
     _config_data: dict
     _config_file: str
-    schedule_message: str
+    schedule_message: list[str]
     header_message: str
     reminders_message: str
     reminders_json_filepath: str
