@@ -15,7 +15,9 @@ def is_option_right(
 def choose_section(json_data: dict) -> int:
     valid_numbers = []
     for index in range(len(json_data['reminders'])):
-        print(f'[{index}]{reminder_json.format_title(json_data['reminders'][index]['Title'])}')
+        print(
+            f'[{index}]{reminder_json.format_title(json_data['reminders'][index]['Title'])}'
+        )
         valid_numbers.append(index)
 
     while True:
