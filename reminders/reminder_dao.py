@@ -1,35 +1,40 @@
 from reminders.reminder import Reminder
+from reminders.reminders_data import RemindersData
 from reminders.reminders_list import RemindersList
-import dataclasses
 
 
-@dataclasses.dataclass()
 class ReminderDAO:
-    json_data: dict
+    _reminders_data: RemindersData
 
-    def __init__(self, json_data: dict):
-        self.json_data = json_data
+    def __init__(self, reminders_data: RemindersData):
+        self._reminders_data = reminders_data
 
     def create(self, reminder: Reminder) -> None:
-        reminders = self.json_data['reminders'][reminder.section_index]['Messages']
+        reminders = self._reminders_data.json_data['reminders'][reminder.section_index][
+            'Messages'
+        ]
 
         if len(reminders) == 0:
             last_id = 0
         else:
             last_id = reminders[-1]['localID']
 
-        self.json_data['reminders'][reminder.section_index]['Messages'].append(
+        self._reminders_data.json_data['reminders'][reminder.section_index][
+            'Messages'
+        ].append(
             {
                 'localID': last_id + 1,
                 'dates': reminder.calculate_date_interval(),
-                'message': reminder.adjust_message()
+                'message': reminder.adjust_message(),
             }
         )
+
+        self._reminders_data.save()
 
     def list_reminders_formatted(self, header: str, current_date: str) -> str:
         reminders_list = RemindersList()
 
-        for section in self.json_data['reminders']:
+        for section in self._reminders_data.json_data['reminders']:
             if not section['Messages']:
                 continue
 
@@ -49,7 +54,7 @@ class ReminderDAO:
         valid_reminders = []
         section_index = 0
 
-        for section in self.json_data['reminders']:
+        for section in self._reminders_data.json_data['reminders']:
             valid_reminders.append({'Title': section['Title'], 'Messages': []})
             for reminder in section['Messages']:
                 if (reminder['dates'] == 'ALWAYS') or (
