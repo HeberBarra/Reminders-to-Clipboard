@@ -6,7 +6,7 @@ from datetime import date, timedelta
 class Reminder:
     initial_date: date
     last_date: date
-    section: str
+    section_title: str
     section_index: int
     message: str
 
@@ -14,13 +14,13 @@ class Reminder:
         self,
         initial_date: date,
         last_date: date,
-        section: str,
+        section_title: str,
         section_index: int,
         message: str,
     ):
         self.initial_date = initial_date
         self.last_date = last_date
-        self.section = section
+        self.section_title = section_title
         self.section_index = section_index
         self.message = message
 
