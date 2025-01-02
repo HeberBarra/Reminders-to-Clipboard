@@ -28,6 +28,15 @@ class SectionDAO:
 
         return sections
 
+    def find_by_id(self, section_index) -> Section | None:
+        sections_json = self._get_sections_json()
+        try:
+            section: dict = sections_json[section_index]
+            return Section(section['Title'], section['Messages'])
+        except IndexError:
+            print('Invalid index!')
+            return None
+
     def find_by_title(self, section_title: str) -> Section | None:
         sections_json = self._get_sections_json()
         for i in range(len(sections_json)):
